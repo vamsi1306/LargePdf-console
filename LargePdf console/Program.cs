@@ -4,7 +4,7 @@ namespace LargePdf_console
 {
     public class Program
     {
-        public static string SelectedDirectory;
+        public static string CurrentDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
         [STAThread]
         public static void Main(string[] args)
@@ -12,7 +12,7 @@ namespace LargePdf_console
             do
             {
                 ImageToPdf converter = new ImageToPdf();
-                if (ShouldContinue(!converter.ConvertImageToPdf()))
+                if (!converter.ConvertImageToPdf())
                     return;
             } while (ShouldContinue());
         }
@@ -24,7 +24,7 @@ namespace LargePdf_console
             return value ?? IsYes(Console.ReadKey().KeyChar);
         }
 
-        private static bool IsYes(char value) => value == 'Y' || value == 'y';
+        public static bool IsYes(char value) => value == 'Y' || value == 'y';
 
     }
 }
