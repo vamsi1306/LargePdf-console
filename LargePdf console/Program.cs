@@ -12,15 +12,16 @@ namespace LargePdf_console
             do
             {
                 ImageToPdf converter = new ImageToPdf();
-                converter.ConvertImageToPdf();
+                if (ShouldContinue(!converter.ConvertImageToPdf()))
+                    return;
             } while (ShouldContinue());
         }
 
-        private static bool ShouldContinue()
+        private static bool ShouldContinue(bool? value = null)
         {
             Console.Clear();
             Console.WriteLine("\nWant to convert another pdf. (Y)");
-            return IsYes(Console.ReadKey().KeyChar);
+            return value ?? IsYes(Console.ReadKey().KeyChar);
         }
 
         private static bool IsYes(char value) => value == 'Y' || value == 'y';

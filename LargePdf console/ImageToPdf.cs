@@ -15,7 +15,7 @@ namespace LargePdf_console
 
         public ImageToPdf() { }
 
-        public void ConvertImageToPdf()
+        public bool ConvertImageToPdf()
         {
             Console.WriteLine(ImagesToPdf);
             Console.WriteLine("FolderSelect:");
@@ -24,7 +24,7 @@ namespace LargePdf_console
             if (filesInPath == null)
             {
                 Console.WriteLine("No files found in the given directory.");
-                return;
+                return false;
             }
             Document doc = new Document();
             Page page = doc.Pages.Add();
@@ -44,6 +44,7 @@ namespace LargePdf_console
             var FileName = Path.GetFileName(DirectoryName);
             doc.Save($"{DirectoryName}\\{FileName}.pdf"); 
             Process.Start("explorer.exe", DirectoryName);
+            return true;
         }
 
         private IEnumerable<string> FolderSelect()
