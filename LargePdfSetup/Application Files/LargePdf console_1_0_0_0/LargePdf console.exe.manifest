@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="LargePdf console.exe" version="1.0.0.0" publicKeyToken="871f756387424955" language="neutral" processorArchitecture="amd64" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="LargePdf console" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+    <commandLine file="LargePdf console.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Aspose.PDF.dll" size="35688728">
+      <assemblyIdentity name="Aspose.PDF" version="21.1.0.0" publicKeyToken="F0262D67FE233D63" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>QJMVDnNIsFzfuX3OPlU3CGz+W9O1vZYOix+O6L31g3M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LargePdf console.exe" size="7072">
+      <assemblyIdentity name="LargePdf console" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nZqybvx94bqql/6aWqVCGFlAGJu7EpMFRby9w6DArok=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.TestPlatform.TestFramework.dll" size="75048">
+      <assemblyIdentity name="Microsoft.VisualStudio.TestPlatform.TestFramework" version="14.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gRcSU2C89W+Shesn+Bv3f5BMaZwB5TetNt+m9TRPGrQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll" size="41256">
+      <assemblyIdentity name="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" version="14.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ohQS08B29xdJ/iizFEofmakmg8ZlvvEICBYh7vvwKNo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="LargePdf console.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=USER\vamsi" issuerKeyHash="358d5da27c341e385388cbc9dfae2cff7603ce08" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>yWpUlEvERU0fHxiHjyEfpjrfgNZIbW60Z6QTba4EJbc=</DigestValue></Reference></SignedInfo><SignatureValue>nbeiU0or1sNfOr6AWfV9w4EUzQOBevWw8iEIxWt5ie1iL0tIui2YY7/4Kl68CQ6mBnczHhGMpMWhfM1wwCwcu85u2jw0No+IZ2yJvvJ9P4ykdajlxRE8GmAtQD2o6kyao/c/c5udmGFyus6XDu/oXDX8NBllUYTtlFFcpWGdrpU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>1du9jXlW2z7F8NBhOVnc6RPg/0zOQI7YTuw7G4B5EPCP74V2YM0oArEQzxqmg7OL1x9vaS9nYVHpK4rLOf8TY03QpvlL23FEB5isuNkTYXd2766+VCZuwbgtcF+JNA1SWKePFJjC8eoWQJGM9gOP0FAaJnfCSw5uiWBFeERrQQU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b72504ae6d13a467b46e6d48d680df3aa61f218f87181f1f4d45c44b94546ac9" Description="" Url=""><as:assemblyIdentity name="LargePdf console.exe" version="1.0.0.0" publicKeyToken="871f756387424955" language="neutral" processorArchitecture="amd64" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=USER\vamsi</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>S6w/xxcVckZh24mLI6kMsWq1buwQ1i5s1qvfjzapoYk=</DigestValue></Reference></SignedInfo><SignatureValue>SFM3HlTXi8EBuGCkATzeAxWKBGWMvpvjSPaBuI13ML2Sd8jZ00vO8dxgD2TOFHFY5QPOnFlStPx+yJenOu2BFYr6y8K45Zv/6GKhv4LqL7HrPFmiYArvhQ18XptG+TQ1GpiHsr4tnlDvilD9eSccjbPYXBqr7XuXm0CsWx/8/ZE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>1du9jXlW2z7F8NBhOVnc6RPg/0zOQI7YTuw7G4B5EPCP74V2YM0oArEQzxqmg7OL1x9vaS9nYVHpK4rLOf8TY03QpvlL23FEB5isuNkTYXd2766+VCZuwbgtcF+JNA1SWKePFJjC8eoWQJGM9gOP0FAaJnfCSw5uiWBFeERrQQU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQUGKws4wVRqNLYWqIDgyq0DANBgkqhkiG9w0BAQsFADAfMR0wGwYDVQQDHhQAVQBTAEUAUgBcAHYAYQBtAHMAaTAeFw0yMTAxMTgwMDAxMjhaFw0yMjAxMTgwNjAxMjhaMB8xHTAbBgNVBAMeFABVAFMARQBSAFwAdgBhAG0AcwBpMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDV272NeVbbPsXw0GE5WdzpE+D/TM5AjthO7DsbgHkQ8I/vhXZgzSgCsRDPGqaDs4vXH29pL2dhUekriss5/xNjTdCm+UvbcUQHmKy42RNhd3bvrr5UJm7BuC1wX4k0DVJYp48UmMLx6hZAkYz2A4/QUBomd8JLDm6JYEV4RGtBBQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAMx2en/vFC+kiqcdSgWZwj/12U4ZVaQL5E8Cp1VrAcDg3GL0Jn8dOuKJJDXrtJEA1s1ehiKkoFWM/ZOJENN9FQO+GkyiAj54fiB7Ht3XnU/in4HI+kH4Go3KdGlaivQhf8rTsy0Z++mrxxSOyHR1I0YnQFPuV2q6dZoNP8+0+bIg</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
